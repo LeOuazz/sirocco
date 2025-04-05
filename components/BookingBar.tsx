@@ -5,6 +5,8 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaHotel, FaCar, FaPlane, FaShip, FaTrain, FaBus, FaWater, FaMapMarkedAlt, FaUmbrellaBeach } from 'react-icons/fa';
 
+const MotionH2 = motion.h2 as typeof motion.h2;
+
 const services = [
     { name: 'Hôtel', icon: <FaHotel /> },
     { name: 'Voiture', icon: <FaCar /> },
@@ -57,7 +59,7 @@ export default function BookingBar() {
     return (
         <section id="booking" className="py-24 bg-[#d4092d] text-white animate-float">
             <div className="max-w-6xl mx-auto px-6">
-                <motion.h2
+                <MotionH2
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -65,7 +67,7 @@ export default function BookingBar() {
                     className="text-3xl md:text-4xl font-bold text-center mb-10"
                 >
                     Réservez votre service
-                </motion.h2>
+                </MotionH2>
 
                 <div className="flex flex-wrap justify-center gap-4 mb-8">
                     {services.map((service) => (
