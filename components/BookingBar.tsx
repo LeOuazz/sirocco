@@ -60,7 +60,7 @@ export default function BookingBar() {
     return (
         <section id="booking" className="py-24 bg-[#d4092d] text-white animate-float">
             <div className="max-w-6xl mx-auto px-6">
-                {/* @ts-ignore */}
+                {/* @ts-expect-error */}
                 <MotionH2
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
