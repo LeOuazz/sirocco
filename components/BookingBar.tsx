@@ -4,9 +4,9 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaHotel, FaCar, FaPlane, FaShip, FaTrain, FaBus, FaWater, FaMapMarkedAlt, FaUmbrellaBeach } from 'react-icons/fa';
-import type { HTMLMotionProps } from 'framer-motion';
 
-const MotionH2 = (props: HTMLMotionProps<'h2'>) => <motion.h2 {...props} />;
+
+const MotionH2 = motion.h2;
 
 const services = [
     { name: 'Hôtel', icon: <FaHotel /> },
@@ -60,7 +60,7 @@ export default function BookingBar() {
     return (
         <section id="booking" className="py-24 bg-[#d4092d] text-white animate-float">
             <div className="max-w-6xl mx-auto px-6">
-                @ts-ignore
+                {/* @ts-ignore */}
                 <MotionH2
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
