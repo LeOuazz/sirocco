@@ -85,7 +85,7 @@ export default function ContactForm() {
                         <Image src="/images/testimonial3.jpg" alt="Client 3" width={180} height={200} className="rounded-xl border-4 border-white" />
                     </div>
                     <p className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-center text-[#002b61] font-semibold text-sm">
-                        “Ils l'ont fait, pourquoi pas vous ?”
+                        “Ils l&apos;ont fait, pourquoi pas vous ?”
                     </p>
                 </motion.div>
             </div>
